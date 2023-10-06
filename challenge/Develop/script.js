@@ -44,14 +44,14 @@ function timeTracker() {
 
     if (blockTime < timeNow) {
       $(this).removeClass("future");
-      $(this).removeClass("past");
-      $(this).addClass("present");
+      $(this).removeClass("present");
+      $(this).addClass("past");
     }
 
     else if (blockTime === timeNow) {
+      $(this).removeClass("past");
       $(this).removeClass("future");
-      $(this).removeClass("present");
-      $(this).addClass("past");
+      $(this).addClass("present");
     }
     else {
       $(this).removeClass("present");
