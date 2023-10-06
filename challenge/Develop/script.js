@@ -22,7 +22,7 @@
   // TODO: Add code to display the current date in the header of the page.
 
 
-var todayDate = moment().format('dddd MM YYYY');
+var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
 $(document).ready(function (){
@@ -71,6 +71,6 @@ $("#hour8 .description").val(localStorage.getItem("hour8"));
     $("#hour15 .description").val(localStorage.getItem("hour15"));
     $("#hour16 .description").val(localStorage.getItem("hour16"));
     $("#hour17 .description").val(localStorage.getItem("hour17"));
-    
+    $("#hour18 .description").val(localStorage.getItem("hour18"));
     timeTracker();
 })
